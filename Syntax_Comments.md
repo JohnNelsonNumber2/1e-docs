@@ -54,8 +54,8 @@ If you trying to put a comment between a `SELECT` and the line ending semi-colon
         prc.Executable LIKE "%chrome%";
 ```
 
-> **WARNING:** Be careful with single quotes `'` inside of your SQLite comments or you could see errors like this
+## Beware of single-quotes in your SQL comments
+The 1E client takes the code from the instruction and tries to rationalize all of the quotes before it executes the code or passes it to SQLite.  Having a single-quote inside of a SQL comment can mess with that process.  In the above code comment, if you replace `it is` with `it's` and then run it, you will see the `Unterminated SQL string literal...` error below:
 
 ![](Media/Unterminated%20SQL%20string%20literal.png)
 
-The 1E client takes the code from the instruction and tries to rationalize all of the quotes before it executes the code.  Having a single-quote inside of a SQL comment can mess with that process.  In the above code, if you replace `it is` with `it's` and then run it, you will see the `Unterminated SQL string literal...` error in the image.
