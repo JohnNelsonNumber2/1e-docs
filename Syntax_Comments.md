@@ -30,7 +30,10 @@ Multiple-line comments start with forward-slash-star `/*` and end with the rever
 ## Comments within SQLite code
 Dexcode is a superset of SQLite (see [Dexcode vs SQLite](./Syntax_Dexcode_vs_SQLite.md) for a description of where SQLite ends and dexcode picks up).
 
-If you trying to put a comment between a `SELECT` and the line ending semi-colon `;` you need to use SQLite comment syntax. Note the block and inline SQL comments below
+If you trying to put a comment between a `SELECT` and the line ending semi-colon `;` you need to use SQLite comment syntax.
+
+> **NOTE:** Do not use `//` if you're commenting a single line within the SQL code<br>
+> SQLite uses `--` to start a single-line comment.<br>
 
 ```
 @procs = OperatingSystem.GetProcesses();
@@ -50,5 +53,9 @@ If you trying to put a comment between a `SELECT` and the line ending semi-colon
         --a single-line SQL comment starts with dash-dash
         prc.Executable LIKE "%chrome%";
 ```
-> **NOTE:** Do not use `//` if you're commenting a single line within the SQL code<br>
-> SQLite uses `--` to start a single-line comment.
+
+> **WARNING:** Be careful with single quotes `'` inside of your SQLite comments or you could see errors like this
+
+![](Media/Unterminated%20SQL%20string%20literal.png)
+
+The 1E client takes the code from the instruction and tries to rationalize all of the quotes before it executes the code.  Having a single-quote inside of a SQL comment can mess with that process.  In the above code, if you replace `it is` with `it's` and then run it, you will see the `Unterminated SQL string literal...` error in the image.

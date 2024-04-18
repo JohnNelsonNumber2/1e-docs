@@ -14,7 +14,7 @@ Comments, assigning data to variables, calling methods, line ending semi-colons,
 ---
 
 ## SELECT statements = SQLite
-Everything between a SELECT and the closing semi-colon `;` is passed to the SQLite engine. This means all SQLite syntax rules are used.
+Everything between a SELECT and the closing semi-colon `;` is passed to the SQLite engine. This means all SQLite syntax rules are used, other than table names all start with `@`
 
 ```c
 //DEXCODE COMMENTS AND METHODS
@@ -24,7 +24,7 @@ Everything between a SELECT and the closing semi-colon `;` is passed to the SQLi
 //SQLite from SELECT to semi-colon ;
 @chromeProcs = SELECT * FROM @procs WHERE Executable like "%chrome%";
 ```
-From the word SELECT all the way to the semi-colon `;` at the end is ultimately sent to SQLite.  The rest is dexcode.
+Everything from the word `SELECT` all the way to the semi-colon `;` at the end is ultimately sent to SQLite.  The rest is dexcode.
 
 ---
 
