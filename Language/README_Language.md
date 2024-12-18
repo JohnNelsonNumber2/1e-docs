@@ -1,5 +1,5 @@
 # Syntax
-Dexcode language syntax
+SCALE language syntax
 <!-- Start Document Outline -->
 
 * [Comments](#comments)
@@ -7,10 +7,10 @@ Dexcode language syntax
 	* [Multiple-Line (block) Comments](#multiple-line-block-comments)
 	* [Comments within SQLite code](#comments-within-sqlite-code)
 	* [Beware of single-quotes in your SQL comments](#beware-of-single-quotes-in-your-sql-comments)
-* [Dexcode vs SQLite](#dexcode-vs-sqlite)
-	* [Calling methods = Dexcode](#calling-methods--dexcode)
+* [SCALE vs SQLite](#SCALE-vs-sqlite)
+	* [Calling methods = SCALE](#calling-methods--SCALE)
 	* [SELECT statements = SQLite](#select-statements--sqlite)
 
 <!-- End Document Outline -->
 [!include[](Syntax_Comments.md)]
-[!include[](Syntax_Dexcode_vs_SQLite.md)]
+[!include[](Syntax_SCALE_vs_SQLite.md)]
