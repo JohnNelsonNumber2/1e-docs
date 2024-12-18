@@ -9,5 +9,5 @@ How to write SCALE
 Extensions to the SQLite language used by the 1E Client
 - [Methods](./Methods/README_Methods.md)  
 Built-in 1E Client language elements
-- [TIMS](./README_TIMS.md)  
+- [TIMS](./TIMS/README_TIMS.md)  
 The Instruction Management Studio / Tachyon Instruction Management Studio
