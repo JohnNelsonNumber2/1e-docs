@@ -1,10 +1,10 @@
-# dexcode-help
-Help for all things Dexcode (a.k.a. SCALE) from [1E Limited / 1E Inc.](https://www.1e.com)
+# SCALE-help
+Help for all things SCALE (a.k.a. SCALE) from [1E Limited / 1E Inc.](https://www.1e.com)
 
 ## Documentation Index
 
 - [Syntax](./README_Syntax.md)  
-How to write dexcode
+How to write SCALE
 - [Functions](./README_Functions.md)  
 Extensions to the SQLite language used by the 1E Client
 - [Methods](./README_Methods.md)  
