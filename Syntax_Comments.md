@@ -1,5 +1,5 @@
 # Comments
-In the dexcode language, comments are used to describe what's going on in the code.  These comments are ignored by the 1E client and serve purely as documentation for programmers.  There are two styles of comments in dexcode:  Single-line or Multiple-line (or block). They use the same characters as javascript or C comments to denote comments.
+In the SCALE language, comments are used to describe what's going on in the code.  These comments are ignored by the 1E client and serve purely as documentation for programmers.  There are two styles of comments in SCALE:  Single-line or Multiple-line (or block). They use the same characters as javascript or C comments to denote comments.
 
 ## Single-Line Comments
 Single line comments start with two forward slashes `//`. Everything from the `//` to the end of the line is treated as a comment and ignored by the client.
@@ -28,7 +28,7 @@ Multiple-line comments start with forward-slash-star `/*` and end with the rever
 ```
 
 ## Comments within SQLite code
-Dexcode is a superset of SQLite (see [Dexcode vs SQLite](./Syntax_Dexcode_vs_SQLite.md) for a description of where SQLite ends and dexcode picks up).
+SCALE is a superset of SQLite (see [SCALE vs SQLite](./Syntax_SCALE_vs_SQLite.md) for a description of where SQLite ends and SCALE picks up).
 
 If you trying to put a comment between a `SELECT` and the line ending semi-colon `;` you need to use SQLite comment syntax.
 
