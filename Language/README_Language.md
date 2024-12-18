@@ -12,5 +12,5 @@ SCALE language syntax
 	* [SELECT statements = SQLite](#select-statements--sqlite)
 
 <!-- End Document Outline -->
-[!include[](Syntax_Comments.md)]
-[!include[](Syntax_SCALE_vs_SQLite.md)]
+[!include[](Language_Comments.md)]
+[!include[](Language_SCALE_vs_SQLite.md)]
