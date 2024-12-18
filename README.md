@@ -9,7 +9,7 @@ Help for all things **SCALE** (an automation language from [1E Limited / 1E Inc.
 
 ## Documentation Index
 
-- [Language(./Language/README_Language.md)  
+- [Language](./Language/README_Language.md)  
 How to write SCALE
 - [Functions](./Functions/README_Functions.md)  
 Extensions to the SQLite language used by the 1E Client
