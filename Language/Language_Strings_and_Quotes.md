@@ -8,14 +8,14 @@ Double-quotes `"` always denote the beginning and end of string, even if you're 
                    ╔═══════════╗
 @myString = SELECT "ABCabc-123!" AS StringColumnName; //around string columns
 
-//double-quotes " around strings in WHERE clause of a SQLite statement. Not ' single-quotes like you'd expect
+
 @procs = OperatingSystem.GetProcesses();
 SELECT
     *
 FROM
     @procs
 WHERE
-    [Executable] LIKE "%chrome%"; //around strings in WHERE clauses
+    [Executable] LIKE "%chrome%"; //around strings in WHERE clauses. Not ' single-quotes like you'd expect
                       ╚════════╝
                      Double-quotes
 ```
