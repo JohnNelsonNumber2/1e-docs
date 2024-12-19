@@ -14,7 +14,7 @@ Comments, assigning data to variables, calling methods, line ending semi-colons,
 ---
 
 ## SELECT statements = SQLite
-Everything between a SELECT and the closing semi-colon `;` is passed to the SQLite engine. This means all SQLite syntax rules are used, other than table names all start with `@`
+Everything between a SELECT and the closing semi-colon `;` is passed to the SQLite engine. This means all SQLite syntax rules are used, other than table names all start with `@` in our version of SQLite.
 
 ```c
 //SCALE COMMENTS AND METHODS
@@ -27,4 +27,20 @@ Everything between a SELECT and the closing semi-colon `;` is passed to the SQLi
 Everything from the word `SELECT` all the way to the semi-colon `;` at the end is ultimately sent to SQLite.  The rest is SCALE.
 
 ---
+
+## Visual example
+Everything from the word `SELECT` all the way to the semi-colon `;` at the end is ultimately sent to SQLite.  The rest is SCALE.
+```
+     SCALE
+╔═════════════╗
+//get processes
+@procs = OperatingSystem.GetProcesses();
+╚══════════════════════════════════════╝
+                  SCALE
+
+                                     SQLite
+               ╔════════════════════════════════════════════════════╗
+@chromeProcs = SELECT * FROM @procs WHERE Executable LIKE "%chrome%";
+╚═════════════╝
+     SCALE
 
