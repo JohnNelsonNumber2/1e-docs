@@ -11,6 +11,6 @@ also known as
 **M**&#8239;anagement<br>
 **S**&#8239;tudio
 
-**TIMS** is the IDE which instructions used by the 1E platform are written.
+**TIMS** is the IDE with which instructions used by the 1E platform are written.
 
 This section holds the documentation for all things related to TIMS.  
