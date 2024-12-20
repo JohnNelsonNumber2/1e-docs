@@ -41,7 +41,9 @@ As seen in this [LINK](https://sqlite.org/datatype3.html), the SQLite table colu
 If you are familiar with Microsoft SQL Server or other enterprise relational database engines, you may be used to seeing types like `VARCHAR`, `NVARCHAR`, `TINYINT`, `SMALLINT`, `NCHAR`, `BOOLEAN`, `DECIMAL`, etc. but SQLite is much simpler and only has the 5 types mentioned.
 
 ## Use `CAST` to change from one SQLite data type to another
-If you're going to write a query in your code that may output a mix of datatypes for the same column, you'll want to use the `CAST` function to bring them into alignment
+If you're going to write a query in your code that may output a mix of datatypes for the same column, you'll want to use the `CAST` function to bring them into alignment  
+
+In the following code, the `ProcessorTimePercent` column may have an `INTEGER` data type for some rows (like `0`) or it may have a `REAL` data type for other rows (like `0.4223`).  
 ```c
 @dta = SELECT * FROM $SoftwarePerformance_Live WHERE Product LIKE "%Edge WebView%";
 SELECT
@@ -54,6 +56,5 @@ GROUP BY
 ORDER BY
     TotalProcessorTime DESC
 LIMIT 10;
-```
-The `ProcessorTimePercent` column may have an `INTEGER` data type for some rows (like `0`) or it may have a `REAL` data type for other rows (like `0.4223`).
+``` 
 By using `CAST(ProcessorTimePercent AS REAL)` we are essentially taking any `NULL`, `INTEGER`, `TEXT` or `BLOB` data that may be in that column and converting them to `REAL` so that the `SUM()` operation doesn't fail or perform integer math instead of floating point math which could give you the wrong numbers.
