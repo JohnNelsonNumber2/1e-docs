@@ -6,14 +6,3 @@ Help for all things **SCALE** (an automation language from [1E Limited / 1E Inc.
 **A**&#8239;gent<br>
 **L**&#8239;anguage for<br>
 **E**&#8239;xtensibility<br>
-
-## Documentation Index
-
-- [Language](./Language/README_Language.md)  
-How to write SCALE
-- [Functions](./Functions/README_Functions.md)  
-Extensions to the SQLite language used by the 1E Client
-- [Methods](./Methods/README_Methods.md)  
-Built-in 1E Client language elements
-- [TIMS](./TIMS/README_TIMS.md)  
-The Instruction Management Studio / Tachyon Instruction Management Studio
