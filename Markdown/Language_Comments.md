@@ -28,7 +28,7 @@ Multiple-line comments start with forward-slash-star `/*` and end with the rever
 ```
 
 ## Comments within SQLite code
-SCALE is a superset of SQLite (see [SCALE vs SQLite](./Syntax_SCALE_vs_SQLite.md) for a description of where SQLite ends and SCALE picks up).
+SCALE is a superset of SQLite (see [SCALE vs SQLite](./Language_SCALE_vs_SQLite.md) for a description of where SQLite ends and SCALE picks up).
 
 If you trying to put a comment between a `SELECT` and the line ending semi-colon `;` you need to use SQLite comment syntax.
 
