@@ -3,10 +3,11 @@ Strings are simply a sequence of characters which can include letters, numbers, 
 
 ## Double-quotes
 Double-quotes `"` always denote the beginning and end of string, even if you're inside of a SQLite statement.
-```c
+```
+                                                      /*
                    Double-quotes
-                   ╔═══════════╗
-@myString = SELECT "ABCabc-123!" AS StringColumnName; //around string columns
+                   ╔═══════════╗                      */
+@myString = SELECT "ABCabc-123!" AS StringColumnName;
 
 
 @procs = OperatingSystem.GetProcesses();
@@ -15,14 +16,14 @@ SELECT
 FROM
     @procs
 WHERE
-    [Executable] LIKE "%chrome%"; //around strings in WHERE clauses. Not ' single-quotes like you'd expect
+    [Executable] LIKE "%chrome%";   /* double quote in WHERE clause, not single quote like you'd expect
                       ╚════════╝
-                     Double-quotes
+                     Double-quotes  */                  
 ```
 
 ## Escape special characters with `\`
 If the string has a `\` backslash or a `"` double-quote in it, you must put a `\` backslash in front of it
-```c
+```
 //escape backslash:  \ becomes \\
 @myString = SELECT "DOMAIN\\USER" AS Account;
 
