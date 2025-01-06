@@ -40,6 +40,8 @@ As seen in this [LINK](https://sqlite.org/datatype3.html), the SQLite table colu
 
 If you are familiar with Microsoft SQL Server or other enterprise relational database engines, you may be used to seeing types like `VARCHAR`, `NVARCHAR`, `TINYINT`, `SMALLINT`, `NCHAR`, `BOOLEAN`, `DECIMAL`, etc. but SQLite is much simpler and only has the 5 types mentioned.
 
+For more information about COLUMN data types returned from an instruction, see [TIMS_Schema](./TIMS_Schema.md)
+
 ## Use `CAST` to change from one SQLite data type to another
 If you're going to write a query in your code that may output a mix of datatypes for the same column, you'll want to use the `CAST` function to bring them into alignment  
 
