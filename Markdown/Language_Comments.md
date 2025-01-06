@@ -60,4 +60,5 @@ The 1E client takes the code from the instruction and tries to rationalize all o
 
 ![image](https://github.com/user-attachments/assets/ac40a455-d31c-4cde-8ff0-e0cb981a5dcb)
 
+See [Language_Strings_and_Quotes](./Language_Strings_and_Quotes.md) for more information on quotes
 
