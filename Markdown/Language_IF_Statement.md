@@ -1,14 +1,20 @@
 # IF Statement
-The IF statement is a control-of-flow structure that allows you to execute code only if some condition is met, and optionally if some condition is not met.
+The `IF` statement is a control-of-flow structure that allows you to execute code only if some condition is met, and optionally if some condition is not met.
+
+The output from an `IF` statement can optionally be assigned to a @table variable
 
 ## IF Syntax
 With the basic syntax, you specify only the name of a table inside the `IF()` parentheses.
 ```
-IF(@there_are_rows_in_this_table)
-  //code to execute if table has rows
-ELSE
-  //optional code to execute if table has no rows
-ENDIF;
+                                                      /*
+   Assignment Optional
+╔═════════════════════════╗                           */
+@optional_table_variable =
+  IF(@there_are_rows_in_this_table)
+    //code to execute if table has rows
+  ELSE
+    //optional code to execute if table has no rows
+  ENDIF;
 ```
 Notice that you do not put any operators inside the parenthesis to check for equality.  Only the name of a table.
  
