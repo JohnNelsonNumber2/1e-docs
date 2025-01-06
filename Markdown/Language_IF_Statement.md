@@ -1,5 +1,5 @@
 # IF Statement
-The IF statement is a control-of-flow statement that allows you to execute code only if some condition is met, and optionally if some condition is not met.
+The IF statement is a control-of-flow structure that allows you to execute code only if some condition is met, and optionally if some condition is not met.
 
 ## IF Syntax
 With the basic syntax, you specify only the name of a table inside the `IF()` parentheses.
