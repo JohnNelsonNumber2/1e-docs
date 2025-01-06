@@ -1,6 +1,6 @@
 # Case sensitivity
 In general, SCALE is a case-sensitive language.
-However, while executing an instruction, some processing [may be](Markdown/Language_SCALE_vs_SQLite.md) handed off to the SQLite engine to do some of the work.
+However, while executing an instruction, some processing [may be](./Language_SCALE_vs_SQLite.md) handed off to the SQLite engine to do some of the work.
 Therefore, it's important to understand when your SCALE code will be case-sensitive and when it will be case-insensitive.
 
 ## Table names are case sensitive
