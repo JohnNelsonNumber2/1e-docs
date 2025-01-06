@@ -5,8 +5,8 @@ The basic rules for data types are:
 * SCALE has only in-memory SQLite tables
 * During SQLite processing, the columns can have `NULL`, `INTEGER`, `REAL`, `TEXT` and `BLOB` data types (See [LINK](https://sqlite.org/datatype3.html))
 * After an instruction or automation has run, the data that gets returned can be one of the following<br>![image](https://github.com/user-attachments/assets/acca0671-eabb-408e-9d95-e26c5395f4e8)
-<br>
-For more information see [TIMS Schema](./TIMS_Schma.md)
+
+For more information about COLUMN data types returned from an instruction, see [TIMS_Schema](./TIMS_Schema.md)
 
 ## SCALE only deals in tables
 When we run a SCALE command like 
