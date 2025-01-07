@@ -21,6 +21,28 @@ WHERE
                      Double-quotes  */                  
 ```
 
+## Beware of single-quotes in your SQL comments
+The 1E client takes the code from the instruction and tries to rationalize all of the quotes before it executes the code or passes it to SQLite. This includes trying to turn single quotes into double quotes since SCALE expects double quotes for strings.  Having a single-quote inside of a SQL comment can mess with that process.  In the following code, the contraction `doesn't` will cause an `Unterminated SQL string literal...` error similar to the image below:
+```
+@procs = OperatingSystem.GetProcesses();
+@chromes =
+    SELECT
+        Executable,
+        ProcessId,
+        ParentProcessId
+    FROM
+        @procs prc
+    WHERE
+        /* This doesn't return anything but chrome processes */
+        prc.Executable LIKE "%chrome%";
+```
+
+![image](https://github.com/user-attachments/assets/ac40a455-d31c-4cde-8ff0-e0cb981a5dcb)
+
+Probably best to just avoid single-quotes if you can.
+
+See [Comments](./Language_Comments.md) for more information on SQL comments, or comments in general
+
 ## Escape special characters with `\`
 If the string has a `\` backslash or a `"` double-quote in it, you must put a `\` backslash in front of it
 ```
