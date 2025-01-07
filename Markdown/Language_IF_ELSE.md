@@ -84,5 +84,8 @@ The output from the last command inside an IF block can be captured in a table b
 @result = 
   IF(@windows)
     OperatingSystem.RunCommand(CommandLine:"powercfg /query");
-  ENDIF; 
+  ENDIF;
+
+//there is now a @result table with the output of that powercfg statement
+SELECT * FROM @result;
 ```
