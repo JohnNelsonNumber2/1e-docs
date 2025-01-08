@@ -1,6 +1,24 @@
 # Glossary
 This page contains a glossary of terms and abbreviations that may be seen in the SCALE documentation which need defining.
 
+## 1E
+The company who created the 1E Platform, formerly known as Tachyon
+
+See [1e.com](https://www.1e.com)
+
+## 1E Client
+a.k.a 1E Client, 1E Agent
+ 
+This is the service that executes instructions and automations--which were written in SCALE--and runs at the endpoints under the `root` or `SYSTEM` context.
+
+## 1E Platform
+a.k.a Tachyon Platform
+
+This is the SaaS or on-prem back-end that hosts the 1E Platform, formerly known as Tachyon.
+
+## Agent
+See [1E Client](#1e-client)
+
 ## Automation
 A `PreCondition`, `Check` or `Fix` in `Endpoint Automation` (formerly known as `Guaranteed State`) is an automation.
 
@@ -9,9 +27,7 @@ Sometimes people use instruction to mean both instructions and automations creat
 See also: [Instruction](#instruction)
 
 ## Client
-a.k.a 1E Client, 1E Agent
- 
-This is the service that executes instructions and automations--which were written in SCALE--and runs at the endpoints under the `root` or `SYSTEM` context.
+See [1E Client](#1e-client)
 
 ## CR
 Carriage-return
@@ -38,27 +54,40 @@ This is the line-feed (ASCII-10) character. This is the character that gets put 
 ## On-prem
 "On-prem" or "on-premises" refers to software, hardware, or computing resources that are managed, maintained, and operated within an organization's own physical premises, rather than through a cloud computing service or a third-party provider. 
 
-## Platform
-a.k.a 1E Platform, Tachyon Platform
-
-This is the SaaS or on-prem back-end that hosts the 1E Platform, formerly known as Tachyon.
-
 ## SaaS
 SaaS, or Software as a Service, is a software distribution model where applications are hosted by a service provider or vendor and made available to customers over the Internet. 
 
-The [1E Platform](#platform) is a subscription based SaaS platform
+The [1E Platform](#1e-platform) is a subscription based SaaS platform
+
+## SCALE
+**S**&#8239;imple<br>
+**C**&#8239;ross-platform<br>
+**A**&#8239;gent<br>
+**L**&#8239;anguage for<br>
+**E**&#8239;xtensibility<br>
+
+`SCALE` is the automation language used by the [1E Client](#client).
+It is a superset of the syntax provided by [SQLite](#sqlite) so it's very easy to learn if you already know the SQLite TSQL syntax
+
+## SQLite
+SQLite is an in-process, self-contained, serverless, zero-configuration, transactional SQL database engine utilized by the [1E Client](#client)
+
+See [sqlite.org](https://sqlite.org) for more information
+
+## Tachyon
+See [1E Platform](#1e-platform)
 
 ## TIMS
-T he
-I nstruction
-M anagement
-S tudio
+**T**&#8239;he<br>
+**I**&#8239;nstruction<br>
+**M**&#8239;anagement<br>
+**S**&#8239;tudio<br>
 
 also known as
 
-T achyon
-I nstruction
-M anagement
-S tudio
+**T**&#8239;achyon<br>
+**I**&#8239;nstruction<br>
+**M**&#8239;anagement<br>
+**S**&#8239;tudio
 
 TIMS is the IDE with which [instructions](#instruction) and [automations](#automation) used by the 1E platform are written.
