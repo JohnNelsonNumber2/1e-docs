@@ -52,12 +52,14 @@ Line-feed
 This is the line-feed (ASCII-10) character. This is the character that gets put into a text editor when you type `ENTER` in Linux, or the last half of the `CRLF` character in Windows
 
 ## On-prem
-"On-prem" or "on-premises" refers to software, hardware, or computing resources that are managed, maintained, and operated within an organization's own physical premises, rather than through a cloud computing service or a third-party provider. 
+"On-prem" or "on-premises" refers to software, hardware, or computing resources that are managed, maintained, and operated within an organization's own physical premises, rather than through a cloud computing service or a third-party provider.
+
+The [1E Platform](#1e-platform) has an on-prem (self-hosted) option
 
 ## SaaS
 SaaS, or Software as a Service, is a software distribution model where applications are hosted by a service provider or vendor and made available to customers over the Internet. 
 
-The [1E Platform](#1e-platform) is a subscription based SaaS platform
+The [1E Platform](#1e-platform) has a subscription-based (cloud-hosted) option
 
 ## SCALE
 **S**&#8239;imple<br>
