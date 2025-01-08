@@ -28,6 +28,11 @@ Sometimes people use instruction to mean both instructions and automations creat
 
 See also: [Instruction](#instruction)
 
+## Background Channel
+The background channel is a component of the [1E Platform](#1e-platform) which handles slow communications or large communications between the platform and clients such as content/file downloads, Endpoint Automation/client policy downloads and responses from instructions that are larger than the 4K that the switches are optimized for.
+
+The communication channel for small and fast comms with the clients is the [switch](#switch); the channel for large and slower comms with the clients is this background channel.
+
 ## Client
 See [1E Client](#1e-client)
 
