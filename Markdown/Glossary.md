@@ -20,7 +20,9 @@ This is the SaaS or on-prem back-end that hosts the 1E Platform, formerly known 
 See [1E Client](#1e-client)
 
 ## Automation
-A `PreCondition`, `Check` or `Fix` in `Endpoint Automation` (formerly known as `Guaranteed State`) is an automation.
+a.k.a Fragment
+
+An automation is a `PreCondition`, `Check` or `Fix` in `Endpoint Automation` (formerly known as a `Guaranteed State` fragment).
 
 Sometimes people use instruction to mean both instructions and automations created with TIMS, but to be precise, an automation is PreCondition, Check or Fix.
 
@@ -75,6 +77,9 @@ It is a superset of the syntax provided by [SQLite](#sqlite) so it's very easy t
 SQLite is an in-process, self-contained, serverless, zero-configuration, transactional SQL database engine utilized by the [1E Client](#client)
 
 See [sqlite.org](https://sqlite.org) for more information
+
+## Switch
+The Switch is a component of the [1E Platform](#1e-platform) which handles communication with the clients.  It uses an always-on connection which is optimized for a fast "one-packet" architecture where the payload can be sent to the client in a single network packet and get a response in a single packet. Instructions are sent to clients from the platform and responses are returned from instructions using the switch.  
 
 ## Tachyon
 See [1E Platform](#1e-platform)
