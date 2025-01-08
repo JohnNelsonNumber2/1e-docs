@@ -35,6 +35,19 @@ Line-feed
 
 This is the line-feed (ASCII-10) character. This is the character that gets put into a text editor when you type `ENTER` in Linux, or the last half of the `CRLF` character in Windows
 
+## On-prem
+"On-prem" or "on-premises" refers to software, hardware, or computing resources that are managed, maintained, and operated within an organization's own physical premises, rather than through a cloud computing service or a third-party provider. 
+
+## Platform
+a.k.a 1E Platform, Tachyon Platform
+
+This is the SaaS or on-prem back-end that hosts the 1E Platform, formerly known as Tachyon.
+
+## SaaS
+SaaS, or Software as a Service, is a software distribution model where applications are hosted by a service provider or vendor and made available to customers over the Internet. 
+
+The [1E Platform](#platform) is a subscription based SaaS platform
+
 ## TIMS
 T he
 I nstruction
