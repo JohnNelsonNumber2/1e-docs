@@ -2,7 +2,9 @@
 SCALE is essentially a superset of [SQLite](https://sqlite.org) syntax. If you are familiar with TSQL, you pretty much already know SCALE. In SCALE, you are basically either calling 1E client methods and modules, or you're executing SQLite select statements. Its important to know where SQLite syntax rules are followed and where SCALE rules are followed.
 
 ## Visual example
-Everything from the word `SELECT` all the way to the semi-colon `;` at the end is ultimately sent to SQLite.  The rest is SCALE.
+Everything from the word `SELECT` all the way to the semi-colon `;` at the end is ultimately sent to SQLite.  The rest is SCALE.  
+
+You need to follow the rules of SCALE when in the SCALE part of the code, and SQLite rules when in the SQLite part of the code.
 ```
                                                                       /*
      SCALE
